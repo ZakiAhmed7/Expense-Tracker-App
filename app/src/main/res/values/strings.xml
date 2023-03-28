@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="greeting_text">Welcome\n Please select How many places did you keep your money in?</string>
+    <string name="save">Save</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_place_name">Enter Place Name</string>
+    <string name="enter_here">Enter here</string>
+    <string name="enter_1st_person_name">Enter 1st Person Name</string>
+    <string name="enter_2nd_person_name">Enter 2nd Person Name</string>
+    <string name="enter_3rd_person_name">Enter 3rd Person Name</string>
+    <string name="enter_how_many_people_are_there">Welcome to Expense Tracker Application\n\nEnter How many people are going to a trip\n\nYou Can Enter Maximum 3 people names for now.</string>
+    <string name="set">Set</string>
+    <string name="enter_amount_to_add">Enter amount to add</string>
+    <string name="update">Update</string>
+    <string name="optional_you_can_add_a_note">Optional: You can add a note</string>
+</resources>

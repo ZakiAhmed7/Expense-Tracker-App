@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstPage">
+
+    <TextView
+        android:id="@+id/txtFirstSen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_how_many_people_are_there"
+        app:layout_constraintBottom_toTopOf="@+id/edTNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/edTNumber"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_here"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@id/namesLinearLayout"
+        app:layout_constraintEnd_toStartOf="@id/btnSet"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstSen"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstSen" />
+
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/edTNumber"
+        app:layout_constraintEnd_toEndOf="@+id/txtFirstSen"
+        app:layout_constraintStart_toEndOf="@id/edTNumber"
+        app:layout_constraintTop_toBottomOf="@id/txtFirstSen"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/namesLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSet"
+        app:layout_constraintVertical_bias="0.32">
+
+        <EditText
+            android:id="@+id/edTName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:autofillHints=""
+            android:hint="@string/enter_1st_person_name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/edTName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/enter_2nd_person_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/edTName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/enter_3rd_person_name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/save" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

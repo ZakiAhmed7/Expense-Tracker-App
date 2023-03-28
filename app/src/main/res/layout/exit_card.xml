@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: "
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvECP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person 1: "
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvECP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person 2: "
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvECP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person 3: "
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:layout_margin="15dp" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Cancel" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnEndTrip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="End The Trip"/>
+
+    </LinearLayout>
+</LinearLayout>

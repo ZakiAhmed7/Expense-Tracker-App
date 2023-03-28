@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondPage">
+
+    <TextView
+        android:id="@+id/tvName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st Person Name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="16sp"
+         />
+
+    <TextView
+        android:id="@+id/tvAmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:text="0.00"
+
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd Person Name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="16sp"
+
+        android:layout_below="@id/tvName1"/>
+
+    <TextView
+        android:id="@+id/tvAmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="0.00"
+
+        android:textSize="15sp"
+        android:layout_below="@id/tvAmount1"/>
+
+    <TextView
+        android:id="@+id/tvName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3rd Person Name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="16sp"
+
+        android:layout_below="@id/tvName2"/>
+
+    <TextView
+        android:id="@+id/tvAmount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="0.00"
+
+        android:textSize="15sp"
+        android:layout_below="@id/tvAmount2"/>
+    <TextView
+        android:id="@+id/tvRecentTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Transactions"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/tvName3"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvRecentTransactions"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp" />
+
+</RelativeLayout>
